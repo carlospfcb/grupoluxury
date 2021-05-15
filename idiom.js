@@ -64,6 +64,8 @@ myFunction([
         "id-19": "Direccion  A108 Adam Street <br> New York, NY 535022<br>United States <br><br><strong>Telefono:</strong> +1 5589 55488 55<br> <strong>Correo:</strong> info@example.com<br>"
        
     }
+
+    ////////////// pagina de whatsaap
      ,
     {
         "id-20": "¿Necesitas ayuda? <strong>Chatea con nosotros</strong>" // Texto Whatsaap
@@ -100,7 +102,7 @@ myFunction([
     }
     ,
     {
-        "id-29": " <li><a href='#'> Categoria 1 </a></li>  <li><a href='#'> Categoria 2 </a></li> <li><a href='#'> Categoria 3 </a></li>" // Servicios dropdown
+        "id-29": " <li><a href='services_1.html'> Categoria 1 </a></li>  <li><a href='services_v.html'> Categoria video </a></li> <li><a href='services_2.html'> Categoria 2 </a></li> <li><a href='services_3.html'> Categoria 3 </a></li> <li><a href='services_4.html'> Categoria 4 </a></li> <li><a href='services_5.html'> Categoria 5 </a></li>" // Servicios dropdown
     } 
     ,
     {
@@ -137,6 +139,53 @@ myFunction([
     ,
     {
         "id-38": "Enviar mensaje" // Contacto Boton  
+    },
+    ////////          Paginas de Categorias                          ////
+    {
+        "id-39": "Categoria 1" // Titulo de  category 1
+    },
+    {
+        "id-40": "We are a interior design service that focus on what's best for your home and what's best for you! Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." // Text de primera category   1
+    },
+    {
+        "id-41": "Categoria video" // Titulo de categoria video
+    },
+    {
+        "id-42":  "We are a interior design service that focus on what's best for your home and what's best for you! Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." // Text de categoria video
+    },
+    {
+        "id-43": "Categoria 2" // Titulo de  category 2
+    },
+    {
+        "id-44": "Enviar mensaje" // Text de  category   2
+    },
+    {
+        "id-45": "Categoria 3" // Titulo de  category 3
+    },
+    {
+        "id-46": "Enviar mensaje" // Text de  category   3
+    },
+    {
+        "id-47": "Categoria 4" // Titulo de  category 4
+    },
+    {
+        "id-48": "Enviar mensaje" // Text de  category   4
+    },
+    {
+        "id-49": "Categoria 5" // Titulo de  category 5
+    },
+    {
+        "id-50": "Enviar mensaje" // Text de  category   5
+    },
+    /////////////////// ante footer
+    {
+        "id-51": "Encuentra la casa de tus sueños" // titilo   
+    },
+    {
+        "id-52": "Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad" // text 
+    },
+    {
+        "id-53": "Contactános" // text boton
     }],
 
     /////////////////////////////// English
@@ -244,7 +293,7 @@ myFunction([
     }
     ,
     {
-        "id-29": " <li><a href='#'> Categoty 1 </a></li>  <li><a href='#'> Categoty 2 </a></li> <li><a href='#'> Categoty 3 </a></li>" // Servicios dropdown
+        "id-29": " <li><a href='services_1.html'> Categoria 1 </a></li>  <li><a href='services_v.html'> Categoria video </a></li> <li><a href='services_2.html'> Categoria 2 </a></li> <li><a href='services_3.html'> Categoria 3 </a></li> <li><a href='services_4.html'> Categoria 4 </a></li> <li><a href='services_5.html'> Categoria 5 </a></li>" // Servicios dropdown
     } 
     ,
     {
@@ -281,6 +330,53 @@ myFunction([
     ,
     {
         "id-38": "Send Message" // Contacto Boton  
+    },
+        ////////          Paginas de Categorias                          ////
+
+    {
+        "id-39": "Category 1" // Title of category 1
+    },
+    {
+        "id-40": "ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur synt occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor et pain magna aliqua. Ut enim ad minim veniam, quer nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " // Text of first category 1
+    },
+    {
+        "id-41": "Video category" // Video category title
+    },
+    {
+        "id-42": "We are an interior design service that focus on what's best for your home and what's best for you! Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure grief in reprehenderit in voluptate velit esse cillum dolore eu fugiat nullasent pariatur. cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " // Video category text
+    },
+    {
+        "id-43": "Category 2" // Title of category 2
+    },
+    {
+        "id-44": "Send message" // Text of category 2
+    },
+    {
+        "id-45": "Category 3" // Title of category 3
+    },
+    {
+        "id-46": "Send message" // Text of category 3
+    },
+    {
+        "id-47": "Category 4" // Title of category 4
+    },
+    {
+        "id-48": "Send message" // Text of category 4
+    },
+    {
+        "id-49": "Category 5" // Title of category 5
+    },
+    {
+        "id-50": "Send message" // Text of category 5
+    }/////////////////// ante footer
+    ,{
+        "id-51": "Find the house of your dreams" // titilo
+    },
+    {
+        "id-52": "Fill out the contact form and an advisor will contact you shortly" // text
+    },
+    {
+        "id-53": "Contact us" // text button
     }]
      /////////////////////////////// Otros
 ]);

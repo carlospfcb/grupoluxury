@@ -2329,7 +2329,7 @@ section {
   display: block;
   flex: 0 0 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 350px) {
   .boton {
       display: inline-block;
       flex: 0 0 auto;

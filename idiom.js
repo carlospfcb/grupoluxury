@@ -102,7 +102,7 @@ myFunction([
     }
     ,
     {
-        "id-29": " <li><a href='services_1.html'> Categoria 1 </a></li>  <li><a href='services_v.html'> Categoria video </a></li> <li><a href='services_2.html'> Categoria 2 </a></li> <li><a href='services_3.html'> Categoria 3 </a></li> <li><a href='services_4.html'> Categoria 4 </a></li> <li><a href='services_5.html'> Categoria 5 </a></li>" // Servicios dropdown
+        "id-29": " <li><a href='services_1.html'> Categoria 1 </a></li>  <li><a href='services_2.html'> Categoria 2 </a></li> <li><a href='services_3.html'> Categoria 3 </a></li> <li><a href='services_4.html'> Categoria 4 </a></li> <li><a href='services_5.html'> Categoria 5 </a></li> <li><a href='services_6.html'> Categoria 6 </a></li>" // Servicios dropdown
     } 
     ,
     {
@@ -293,7 +293,7 @@ myFunction([
     }
     ,
     {
-        "id-29": " <li><a href='services_1.html'> Categoria 1 </a></li>  <li><a href='services_v.html'> Categoria video </a></li> <li><a href='services_2.html'> Categoria 2 </a></li> <li><a href='services_3.html'> Categoria 3 </a></li> <li><a href='services_4.html'> Categoria 4 </a></li> <li><a href='services_5.html'> Categoria 5 </a></li>" // Servicios dropdown
+        "id-29": " <li><a href='services_1.html'> Category 1 </a></li>  <li><a href='services_2.html'> Category 2 </a></li> <li><a href='services_3.html'> Category 3 </a></li> <li><a href='services_4.html'> Categoria 4 </a></li> <li><a href='services_5.html'> Category 5 </a></li> <li><a href='services_6.html'> Category 6 </a></li>" // Servicios dropdown
     } 
     ,
     {

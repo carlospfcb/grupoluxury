@@ -1,0 +1,601 @@
+/*! Copyright (c) 2021 WhatsApp Inc. All Rights Reserved. */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*  End reset css */
+body {
+  background-color: #dddbd1;
+  background-image: linear-gradient(to bottom, #dddbd1, #d2dbdc);
+  font-family: "Segoe UI", "Helvetica Neue", "Helvetica", "Lucida Grande", Arial, "Ubuntu", "Cantarell", "Fira Sans", sans-serif;
+  color: #4a4a4a;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body.voip {
+  background-color: transparent;
+  background-image: none;
+}
+
+body.text-rendering-bug-fix {
+  text-rendering: unset;
+}
+
+body.native.darwin,
+.os-mac {
+  font-family: system, -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "Kohinoor Devanagari", sans-serif;
+}
+
+.os-mac.font-fix {
+  font-family: "SF Pro Text", "SF Pro Icons", system, -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "Kohinoor Devanagari", sans-serif;
+}
+
+html[dir="rtl"] {
+  direction: rtl;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+code {
+  font-family: Consolas, Menlo, Monaco, "Lucida Console", Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, "Courier New", Courier, monospace;
+}
+
+input,
+button {
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", "Helvetica", "Lucida Grande", Arial, "Ubuntu", "Cantarell", "Fira Sans", sans-serif;
+}
+
+body.native.darwin input,
+.os-mac input,
+body.native.darwin button,
+.os-mac button {
+  font-family: system, -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "Kohinoor Devanagari", sans-serif;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #039BE5;
+}
+
+/**
+ * Firefox does not support full scrollbar styling yet
+ * This is an alternative way to make scrollbars look
+ * better on Firefox
+ */
+* {
+  scrollbar-color: rgba(0, 0, 0, 0.2) rgba(255, 255, 255, 0.1);
+  scrollbar-width: thin;
+}
+
+:global(.dark) * {
+  scrollbar-color: rgba(255, 255, 255, 0.16) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+:global(.dark) *::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+:global(.dark) *::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+svg {
+  display: block;
+  pointer-events: none;
+}
+
+div[data-list-scroll-container] {
+  transform: translateZ(0);
+}
+
+html, body, #app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "SF Pro Text", "SF Pro Icons", system, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "Ubuntu", "Cantarell", "Fira Sans", sans-serif;
+}
+
+.app-wrapper {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 648px) {
+  .app-wrapper {
+    overflow-x: auto;
+  }
+}
+
+.app-wrapper::-webkit-scrollbar-track {
+  background-color: #dddbd1;
+}
+
+.browsers-title {
+  margin-bottom: 42px;
+}
+
+.version-title {
+  margin-bottom: 5px;
+  padding-top: 3px;
+}
+
+.landing-wrapper {
+  align-items: center;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 92px;
+  z-index: 2;
+}
+
+.landing-wrapper:before {
+  background-color: #00BFA5;
+  content: '';
+  height: 222px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.landing-window {
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1050px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.landing-main {
+  padding: 64px 60px 110px 60px;
+  position: relative;
+}
+
+.landing-header {
+  align-items: center;
+  display: flex;
+  flex: none;
+  justify-content: flex-start;
+  margin: 27px auto 28px auto;
+  min-height: 39px;
+  width: 1050px;
+}
+
+.landing-headerTitle {
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 14px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.edge-fix .landing-headerTitle {
+  font-weight: 600;
+}
+
+.landing-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.landing-logo {
+  display: block;
+  height: 39px;
+  width: 39px;
+}
+
+.landing-title {
+  color: #525252;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+@media screen and (min-height: 760px) and (min-width: 1095px) {
+  .landing-header {
+    margin-bottom: 66px;
+  }
+}
+
+@media screen and (min-height: 760px) and (min-width: 780px) and (max-width: 1095px) {
+  .landing-header {
+    margin-bottom: 68px;
+  }
+}
+
+@media screen and (max-width: 1095px) {
+  .landing-header {
+    width: 100%;
+  }
+  .landing-wrapper {
+    box-sizing: border-box;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  .landing-main {
+    padding: 58px 52px 110px 52px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .landing-wrapper {
+    position: relative;
+  }
+  .headline {
+    font-size: 26px;
+  }
+  .listItem {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .headline {
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .landing-window {
+    width: 100%;
+  }
+  .landing-main {
+    padding-bottom: 82px;
+  }
+  .text {
+    flex: none;
+    order: 1;
+    width: 100%;
+  }
+  .hint {
+    bottom: unset;
+    font-size: unset;
+    left: unset;
+    margin-bottom: 52px;
+    margin-top: 28px;
+    order: 2;
+    position: relative;
+    width: 100%;
+  }
+  .qr {
+    margin-left: auto;
+    margin-right: auto;
+    order: 3;
+  }
+  .toggle {
+    bottom: unset;
+    margin-top: 28px;
+    order: 4;
+    position: relative;
+    right: unset;
+    width: 100%;
+  }
+  .headline {
+    margin-bottom: 28px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .landing-wrapper {
+    min-width: 520px;
+    padding: 0;
+    position: relative;
+  }
+  .landing-header {
+    box-sizing: border-box;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  .landing-window {
+    border-radius: 0;
+  }
+  .landing-main {
+    padding: 36px 36px 72px 36px;
+  }
+}
+
+html[dir="rtl"] .landing-headerTitle {
+  margin-left: 0;
+  margin-right: 14px;
+}
+
+.image {
+  display: table-cell;
+  width: 52px;
+  vertical-align: middle;
+}
+
+.image-logo {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.text-tip {
+  margin-bottom: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-tip a {
+  color: #009688;
+}
+
+.text-tip a:hover {
+  text-decoration: underline;
+}
+
+.browsers {
+  margin-bottom: 32px;
+  margin-left: -3px;
+}
+
+.browsers:after {
+  display: table;
+  clear: both;
+  content: ' ';
+}
+
+.browser {
+  display: table;
+  float: left;
+  width: 220px;
+}
+
+.browser-safari {
+  width: 300px;
+}
+
+.browser-title {
+  display: table-cell;
+  height: 52px;
+  padding-left: 6px;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.page-version .window-text {
+  padding-left: 176px;
+}
+
+.page-version .image {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: top;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+}
+
+.page-version .image-logo {
+  display: inline-block;
+  width: 72px;
+  height: 72px;
+  margin-top: 29px;
+}
+
+.page-version .browser {
+  width: auto;
+}
+
+@media screen and (max-width: 880px), screen and (max-height: 400px) {
+  .browsers {
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  .browser {
+    display: inline-block;
+    margin: 0 5px;
+    margin-bottom: 20px;
+  }
+  .browser:last-child {
+    margin-bottom: 0;
+  }
+  .page-version .window-text {
+    padding-left: 156px;
+  }
+}
+
+@media screen and (max-width: 518px) {
+  .page-version .window-text {
+    padding-left: 112px;
+  }
+  .page-version .image {
+    width: auto;
+    height: auto;
+    background: transparent;
+  }
+  .page-version .browser {
+    width: auto;
+  }
+}
+
+.action {
+  margin-top: 26px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  color: #FFFFFF;
+  font-size: 14px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  background-color: #05cd51;
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.btn:hover {
+  background-color: #06d253;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow .18s ease-out, background .18s ease-out, color .18s ease-out;
+}
+
+html[dir="rtl"] .browser {
+  float: right;
+}
+
+html[dir="rtl"] .browsers {
+  margin-right: -3px;
+  margin-left: 0;
+}
+
+html[dir="rtl"] .browser-title {
+  padding-right: 6px;
+  padding-left: 0;
+  text-align: right;
+}
+
+html[dir="rtl"] .page-version .window-text {
+  padding-right: 176px;
+  padding-left: 0;
+}
+
+html[dir="rtl"] .page-version .browser {
+  float: right;
+}
+
+@media screen and (max-width: 880px), screen and (max-height: 400px) {
+  html[dir="rtl"] .page-version .window-text {
+    padding-right: 156px;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 518px) {
+  html[dir="rtl"] .page-version .window-text {
+    padding-right: 112px;
+    padding-left: 0;
+  }
+}
+
+.browsers-last {
+  margin-bottom: 0;
+}
+
+.page-browsers .landing-main,
+.page-version .landing-main {
+  padding-bottom: 86px;
+}
+
+@media screen and (max-width: 1095px) {
+  .page-browsers .landing-main,
+  .page-version .landing-main {
+    padding-bottom: 72px;
+  }
+}
+

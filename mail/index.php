@@ -18,7 +18,7 @@ $message = $_POST['message'];
 
 try {
     //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
@@ -60,7 +60,7 @@ try {
     </html>
     ";
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = $Subject;
+    $mail->Subject = $the_subject;
     $mail->Body    = $cuerpo;
    // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
@@ -72,7 +72,7 @@ try {
     echo 'Mailer Error: ' . $phpmailer->ErrorInfo;
 } 
 else {
-    echo 'El mensaje ha sido enviado';
+    echo 'OK';
 }  
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";

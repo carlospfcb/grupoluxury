@@ -102,7 +102,7 @@ myFunction([
     }
     ,
     {
-        "id-29": " <li><a href='services_1.html'> Categoria 1 </a></li>  <li><a href='services_2.html'> Categoria 2 </a></li> <li><a href='services_3.html'> Categoria 3 </a></li> <li><a href='services_4.html'> Categoria 4 </a></li> <li><a href='services_5.html'> Categoria 5 </a></li> <li><a href='services_6.html'> Categoria 6 </a></li>" // Servicios dropdown
+        "id-29": " <li><a href='services_LUXURY_GROUP.html'> LUXURY GROUP</a></li>  <li><a href='services_Abogados.html'> Abogados </a></li> <li><a href='services_Financiamientos.html'> Financiamientos </a></li> <li><a href='services_Inversiones.html'> Inversiones </a></li> <li><a href='services_Money_Exchange.html'> Money Exchange </a></li> <li><a href='services_autoservicio.html'> Luxury autoservicio y car wash </a></li> <li><a href='services_Restaurant.html'> Luxury Restaurant </a></li> <li><a href='services_Puro_vino.html'> Luxury Puro Vino </a></li> <li><a href='services_Cigars.html'> Luxury Don Angel Cigars </a></li>" // Servicios dropdown
     } 
     ,
     {
@@ -293,8 +293,8 @@ myFunction([
     }
     ,
     {
-        "id-29": " <li><a href='services_1.html'> Category 1 </a></li>  <li><a href='services_2.html'> Category 2 </a></li> <li><a href='services_3.html'> Category 3 </a></li> <li><a href='services_4.html'> Categoria 4 </a></li> <li><a href='services_5.html'> Category 5 </a></li> <li><a href='services_6.html'> Category 6 </a></li>" // Servicios dropdown
-    } 
+        "id-29": "<li> <a href='services_LUXURY_GROUP.html'> LUXURY GROUP </a> </li> <li> <a href='services_Abogados.html'> Lawyers </a> </ li> <li> <a href='services_Financiamientos.html'> Financing </a> </li> <li> <a href='services_Inversiones.html'> Investments </a> </li> <li><a href='services_Money_Exchange.html'> Money Exchange </a></li> <li> <a href='services_autoservicio.html'> Luxury self-service and car wash </a> </li> <li> <a href = 'services_Restaurant.html'> Luxury Restaurant </a> </li> <li> <a href='services_Puro_vino.html'> Luxury Puro Vino </a> </li> <li> <a href = ' services_Cigars.html '> Luxury Don Angel Cigars </a> </li> "// Services dropdown 
+    }
     ,
     {
         "id-30": "<i class='bi bi-geo-alt'></i> <h4  >Localition:</h4> <p>A108 Adam Street<br>New York, NY 535022</p>" // Contacto localizacion 

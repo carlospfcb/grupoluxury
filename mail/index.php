@@ -25,19 +25,13 @@ try {
     $mail->Username   = 'pereircarlos1993@gmail.com';                     //SMTP username
     $mail->Password   = 'polaroid123$';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-    $mail->Port       = 465;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    $mail->Port       = 587;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    //$mail->setFrom('pereircarlos1993@gmail.com', 'Carlos');
-    $mail->addAddress('polaroiweb@gmail.com');     //Add a recipient
-    //$mail->addAddress('ellen@example.com');               //Name is optional
-    //$mail->addReplyTo('info@example.com', 'Information');
-    //$mail->addCC('cc@example.com');
-    //$mail->addBCC('bcc@example.com');
+    $mail->setFrom('pereircarlos1993@gmail.com', 'Web '); // this one sends
 
-    //Attachments
-   // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-   // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
+    $mail->addAddress('polaroidweb@gmail.com',);     //Add a recipient
+ 
 
     //Content
 
@@ -64,16 +58,15 @@ try {
     $mail->Body    = $cuerpo;
    // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
+   try {
     $mail->send();
-    //echo 'Message has been sent';
-    
- if(!$mail->send()) {
-    //echo 'El mensaje no pudo ser enviado.';
-    echo 'Mailer Error: ' . $phpmailer->ErrorInfo;
-} 
-else {
-    echo 'OK';
-}  
+    echo "OK";
+} catch (Exception $e) {
+    echo "Mailer Error: " . $mail->ErrorInfo;
+}
+   
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
+
+?>

@@ -20,42 +20,42 @@ myFunction([
         "id-5": "Categoría" // Texto Categorias
     }, 
     {
-        "id-6": "Categoría 1"
+        "id-6": "Luxury Group"
     }, 
     {
         "id-7": "Ver Más"
     }, 
     {
-        "id-8": "Categoría 2"
+        "id-8": "Restaurante"
     }, 
     {
         "id-9": "Ver Más"
-    }, 
+    },  
     {
-        "id-10": "Categoría 3"
+        "id-10": "Abogados"
     }, 
     {
         "id-11": "Ver Más"
     }, 
     {
-        "id-12": "Categoría 4"
+        "id-12": "Puro Vino"
     }, 
     {
         "id-13": "Ver Más"
     }, 
     {
-        "id-14": "Categoría 5"
+        "id-14": "Finaciamiento"
     }, 
     {
         "id-15": "Ver Más"
     }, 
     {
-        "id-16": "Categoría 6"
+        "id-16": "Cigarros Don Angel"
     }, 
     {
         "id-17": "Ver Más"
     }
-    , 
+    ,
     {
         "id-18": "Compañia" // Fin de  Texto Categorias
     }
@@ -102,7 +102,7 @@ myFunction([
     }
     ,
     {
-        "id-29": " <li><a href='services_LUXURY_GROUP.html'> LUXURY GROUP</a></li>  <li><a href='services_Abogados.html'> Abogados </a></li> <li><a href='services_Financiamientos.html'> Financiamientos </a></li> <li><a href='services_Inversiones.html'> Inversiones </a></li> <li><a href='services_Money_Exchange.html'> Money Exchange </a></li> <li><a href='services_autoservicio.html'> Luxury autoservicio y car wash </a></li> <li><a href='services_Restaurant.html'> Luxury Restaurant </a></li> <li><a href='services_Puro_vino.html'> Luxury Puro Vino </a></li> <li><a href='services_Cigars.html'> Luxury Don Angel Cigars </a></li>" // Servicios dropdown
+        "id-29": " <li><a href='services_LUXURY_GROUP.html'> LUXURY GRUPO</a></li>  <li><a href='services_Abogados.html'> Abogados </a></li> <li><a href='services_Financiamientos.html'> Financiamientos </a></li> <li><a href='services_Inversiones.html'> Inversiones </a></li> <li><a href='services_Money_Exchange.html'> Cambio de dinero </a></li> <li><a href='services_autoservicio.html'> Luxury autoservicio y car wash </a></li> <li><a href='services_Restaurant.html'> Luxury Restaurante </a></li> <li><a href='services_Puro_vino.html'> Luxury Puro Vino </a></li> <li><a href='services_Cigars.html'> Luxury Cigarros Don Angel </a></li>" // Servicios dropdown
     } 
     ,
     {
@@ -142,37 +142,37 @@ myFunction([
     },
     ////////          Paginas de Categorias                          ////
     {
-        "id-39": "Categoria 1" // Titulo de  category 1
+        "id-39": "Luxury Group" // Titulo de  category 1
     },
     {
         "id-40": "We are a interior design service that focus on what's best for your home and what's best for you! Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." // Text de primera category   1
     },
     {
-        "id-41": "Categoria video" // Titulo de categoria video
+        "id-41": "Autoservicio y lavado de autos" // Titulo de categoria video
     },
     {
         "id-42":  "We are a interior design service that focus on what's best for your home and what's best for you! Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." // Text de categoria video
     },
     {
-        "id-43": "Categoria 2" // Titulo de  category 2
+        "id-43": "Abogados" // Titulo de  category 2
     },
     {
         "id-44": "Enviar mensaje" // Text de  category   2
     },
     {
-        "id-45": "Categoria 3" // Titulo de  category 3
+        "id-45": "Financiamiento" // Titulo de  category 3
     },
     {
         "id-46": "Enviar mensaje" // Text de  category   3
     },
     {
-        "id-47": "Categoria 4" // Titulo de  category 4
+        "id-47": "Inversiones" // Titulo de  category 4
     },
     {
         "id-48": "Enviar mensaje" // Text de  category   4
     },
     {
-        "id-49": "Categoria 5" // Titulo de  category 5
+        "id-49": "Cambio de dinero" // Titulo de  category 5
     },
     {
         "id-50": "Enviar mensaje" // Text de  category   5
@@ -186,7 +186,47 @@ myFunction([
     },
     {
         "id-53": "Contactános" // text boton
-    }],
+    }, 
+    ////////////////////////// Categorias restantes////////////////////////////////
+    {
+        "id-54": "Inversiones"
+    }, 
+    {
+        "id-55": "Ver Más"
+    },
+    {
+        "id-56": "Cambio de dinero"
+    }, 
+    {
+        "id-57": "Ver Más"
+    },
+    {
+        "id-58": "Autoservicio y car wash"
+    }, 
+    {
+        "id-59": "Ver Más"
+    },
+    {
+        "id-60": "Restaurante" // Título del restaurante
+    },
+    {
+        "id-61": "Enviar mensaje" // Texto del restautente
+    }
+    ,
+    {
+        "id-62": "Vino puro" // Título del puro vino
+    },
+    {
+        "id-63": "Enviar mensaje" // Texto del puro vino
+    }
+    ,
+    {
+        "id-64": "Cigarros Don Angel" // Título del cigars
+    },
+    {
+        "id-65": "Enviar mensaje" // Texto del cigars
+    }
+],
 
     /////////////////////////////// English
 
@@ -213,40 +253,40 @@ myFunction([
         "id-5": "Category"
     },
     {
-        "id-6": "Category 1"
+        "id-6": "Luxury group"
     },
     {
-        "id-7": "See More"
+        "id-7": "See more"
     },
     {
-        "id-8": "Category 2"
+        "id-8": "Restaurant"
     },
     {
-        "id-9": "See More"
+        "id-9": "See more"
     },
     {
-        "id-10": "Category 3"
+        "id-10": "Lawyers"
     },
     {
-        "id-11": "See More"
+        "id-11": "See more"
     },
     {
-        "id-12": "Category 4"
+        "id-12": "Pure Wine"
     },
     {
-        "id-13": "See More"
+        "id-13": "See more"
     },
     {
-        "id-14": "Category 5"
+        "id-14": "Financing"
     },
     {
-        "id-15": "See More"
+        "id-15": "See more"
     },
     {
-        "id-16": "Category 6"
+        "id-16": "Don Angel Cigars"
     },
     {
-        "id-17": "See More"
+        "id-17": "See more"
     }
     ,
     {
@@ -293,7 +333,7 @@ myFunction([
     }
     ,
     {
-        "id-29": "<li> <a href='services_LUXURY_GROUP.html'> LUXURY GROUP </a> </li> <li> <a href='services_Abogados.html'> Lawyers </a> </ li> <li> <a href='services_Financiamientos.html'> Financing </a> </li> <li> <a href='services_Inversiones.html'> Investments </a> </li> <li><a href='services_Money_Exchange.html'> Money Exchange </a></li> <li> <a href='services_autoservicio.html'> Luxury self-service and car wash </a> </li> <li> <a href = 'services_Restaurant.html'> Luxury Restaurant </a> </li> <li> <a href='services_Puro_vino.html'> Luxury Puro Vino </a> </li> <li> <a href = ' services_Cigars.html '> Luxury Don Angel Cigars </a> </li> "// Services dropdown 
+        "id-29": "<li> <a href='services_LUXURY_GROUP.html'> LUXURY GROUP </a> </li> <li> <a href='services_Abogados.html'> Lawyers </a> </ li> <li> <a href='services_Financiamientos.html'> Financing </a> </li> <li> <a href='services_Inversiones.html'> Investments </a> </li> <li><a href='services_Money_Exchange.html'> Money Exchange </a></li> <li> <a href='services_autoservicio.html'> Luxury self-service and car wash </a> </li> <li> <a href = 'services_Restaurant.html'> Luxury Restaurant </a> </li> <li> <a href='services_Puro_vino.html'> Luxury Pure Wine </a> </li> <li> <a href = ' services_Cigars.html '> Luxury Don Angel Cigars </a> </li> "// Services dropdown 
     }
     ,
     {
@@ -334,37 +374,37 @@ myFunction([
         ////////          Paginas de Categorias                          ////
 
     {
-        "id-39": "Category 1" // Title of category 1
+        "id-39": "Luxury Group" // Title of category 1
     },
     {
         "id-40": "ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur synt occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor et pain magna aliqua. Ut enim ad minim veniam, quer nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " // Text of first category 1
     },
     {
-        "id-41": "Video category" // Video category title
+        "id-41": "Self-service and car wash" // Video category title
     },
     {
         "id-42": "We are an interior design service that focus on what's best for your home and what's best for you! Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure grief in reprehenderit in voluptate velit esse cillum dolore eu fugiat nullasent pariatur. cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " // Video category text
     },
     {
-        "id-43": "Category 2" // Title of category 2
+        "id-43": "Lawyers" // Title of category 2
     },
     {
         "id-44": "Send message" // Text of category 2
     },
     {
-        "id-45": "Category 3" // Title of category 3
+        "id-45": "Financing" // Title of category 3
     },
     {
         "id-46": "Send message" // Text of category 3
     },
     {
-        "id-47": "Category 4" // Title of category 4
+        "id-47": "Investments" // Title of category 4
     },
     {
         "id-48": "Send message" // Text of category 4
     },
     {
-        "id-49": "Category 5" // Title of category 5
+        "id-49": "Money Exchange" // Title of category 5
     },
     {
         "id-50": "Send message" // Text of category 5
@@ -377,6 +417,45 @@ myFunction([
     },
     {
         "id-53": "Contact us" // text button
-    }]
+    },
+    {
+        "id-54": "Investments"
+    },
+    {
+        "id-55": "See More"
+    },
+    {
+        "id-56": "Money Exchange"
+    },
+    {
+        "id-57": "See More"
+    },
+    {
+        "id-58": "Self-service and car wash"
+    },
+    {
+        "id-59": "See More"
+    },
+    {
+        "id-60": "Restaurant" // Title of restautente
+    },
+    {
+        "id-61": "Send message" // Text of restautente
+    }
+    ,
+    {
+        "id-62": "Pure wine" // Title of restautente
+    },
+    {
+        "id-63": "Send message" // Text of restautente
+    }
+    ,
+    {
+        "id-64": "Don Angel cigars" // Title of restautente
+    },
+    {
+        "id-65": "Send message" // Text of restautente
+    }
+]
      /////////////////////////////// Otros
 ]);

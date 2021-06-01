@@ -25,11 +25,11 @@ try {
     $mail->Username   = 'pereircarlos1993@gmail.com';                     //SMTP username
     $mail->Password   = 'polaroid123$';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-    $mail->Port       = 587;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    $mail->Port       = 465;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    $mail->setFrom('pereircarlos1993@gmail.com', 'Carlos');
-    $mail->addAddress('eliezerdanielgh1@gmail.com', 'Eliezer');     //Add a recipient
+    //$mail->setFrom('pereircarlos1993@gmail.com', 'Carlos');
+    $mail->addAddress('polaroiweb@gmail.com');     //Add a recipient
     //$mail->addAddress('ellen@example.com');               //Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
     //$mail->addCC('cc@example.com');

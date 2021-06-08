@@ -2568,7 +2568,26 @@ l21.186-23.834c1.766-2.648,2.648-6.179,1.766-8.828l-25.6-57.379C193.324,138.593,
     <script src="assets/js/main.js"></script>
 
     <!-- Template Main Catalogue -->
-
+	<script type="text/javascript">
+		function isMobileWA() {
+			return (/Android|webOS|iPhone|iPad|iPod|Windows Phone|IEMobile|Mobile|BlackBerry/i.test(navigator.userAgent));
+		}
+		var elm = jQuery('a[href*="whatsapp.com"]');
+		jQuery.each(elm, function (index, value) {
+			var item = jQuery(value).attr('href');
+			if (item.indexOf('chat') != -1) {
+				//nothing
+			} else if (item.indexOf('web.whatsapp') != -1 && isMobileWA()) {
+				var itemLink = item;
+				var newLink = itemLink.replace('web.whatsapp', 'api.whatsapp');
+				jQuery(value).attr("href", newLink);
+			} else if (item.indexOf('api.whatsapp') != -1 && !isMobileWA()) {
+				var itemLink = item;
+				var newLink = itemLink.replace('api.whatsapp', 'web.whatsapp');
+				jQuery(value).attr("href", newLink);
+			}
+		});
+	</script>
 
     <!-- --------------------- -->
 
